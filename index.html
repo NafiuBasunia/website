@@ -3,130 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Captain Nafiu's CV</title>
+  <title>Captain’s First Website</title>
   <style>
     body {
+      background: #121212;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #1e1e1e;
-      color: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      text-align: center;
     }
-
     .container {
-      display: flex;
-      flex-direction: row;
-      background: #2b2b2b;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
-      max-width: 90%;
-      flex-wrap: wrap;
-    }
-
-    .left {
-      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-right: 30px;
+      padding: 2rem;
     }
-
-    .left img {
-      width: 180px;
-      height: 180px;
+    .profile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-img {
+      width: 200px;
+      height: 200px;
       object-fit: cover;
-      border: 3px solid #f0f0f0;
-      margin-bottom: 15px;
-    }
-
-    .left h2 {
-      margin: 0;
-      font-size: 1.4rem;
-      color: #1e90ff;
-    }
-
-    .right {
-      flex: 2;
-      background: #3a2c2c;
-      padding: 20px;
-      border-radius: 15px;
-    }
-
-    .right h3 {
+      border-radius: 10px;
       margin-bottom: 10px;
-      font-size: 1.2rem;
-      color: #ffcc99;
     }
-
-    .skills {
-      list-style-type: none;
-      padding: 0;
-      font-size: 1rem;
-      line-height: 1.8rem;
-    }
-
-    .skills li::before {
-      content: "⚡ ";
-      color: #ffa500;
-    }
-
-    .github-link {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 15px;
-      background-color: #1e90ff;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
+    .name {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
       font-weight: bold;
-      transition: background 0.3s ease;
     }
-
-    .github-link:hover {
-      background-color: #0072cc;
+    .skills-box {
+      background-color: #3e2723;
+      padding: 1rem;
+      border-radius: 10px;
+      color: #fff3e0;
+      width: 250px;
+      margin-top: 10px;
     }
-
-    @media (max-width: 600px) {
-      .container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .left {
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
-
-      .right {
-        width: 100%;
-      }
+    .skills-box h2 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+    .skills-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .skills-box ul li {
+      font-size: 0.95rem;
+      margin: 5px 0;
+    }
+    .links {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .links a {
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #1e88e5;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    .links a:hover {
+      background-color: #1565c0;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="left">
-      <img src="captain.jpg" alt="Captain's Image">
-      <h2>Nafiu Basunia</h2>
+    <div class="profile-section">
+      <img src="captain.jpg" alt="Captain's Avatar" class="profile-img">
+      <div class="name">Nafiu Basunia</div>
+      <div class="skills-box">
+        <h2>Skills</h2>
+        <ul>
+          <li>Networking Specialist</li>
+          <li>Vulnerability Analyst</li>
+          <li>Kali Linux Professional</li>
+          <li>Penetration Tester</li>
+          <li>Social Engineering Expert</li>
+          <li>Exploit Developer</li>
+        </ul>
+      </div>
     </div>
-    <div class="right">
-      <h3>Professional Skills</h3>
-      <ul class="skills">
-        <li>Networking Specialist</li>
-        <li>Vulnerability Analyst</li>
-        <li>Kali Linux Professional</li>
-        <li>Penetration Tester</li>
-        <li>Social Engineering Expert</li>
-        <li>Exploit Developer</li>
-      </ul>
-      <a class="github-link" href="https://github.com/NafiuBasunia" target="_blank" rel="noopener noreferrer">
-        🔗 Check out my GitHub
-      </a>
+
+    <div class="links">
+      <a href="https://github.com/NafiuBasunia" target="_blank">🔗 GitHub Profile</a>
+      <a href="https://www.facebook.com/share/15UBu2yAy6/" target="_blank">📘 Facebook</a>
+      <a href="https://www.instagram.com/nafiubasunia.333?igsh=MmJldHZoNHRsbXcw" target="_blank">📸 Instagram</a>
     </div>
   </div>
 </body>
