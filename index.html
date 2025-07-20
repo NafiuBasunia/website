@@ -3,43 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Captain’s First Website</title>
+  <title>Captain’s Domain</title>
   <style>
+    /* Make the background image cover the whole page */
     body {
-      background: #121212;
-      color: #f0f0f0;
+      margin: 0;
+      height: 100vh;
+      background: url('captain.jpg') no-repeat center center fixed;
+      background-size: cover;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #f0f0f0;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
-      text-align: center;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
     }
     h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
+      background-color: rgba(0,0,0,0.4);
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
     }
     p {
       font-size: 1.5rem;
-      color: #a0a0a0;
+      background-color: rgba(0,0,0,0.4);
+      padding: 0.3rem 0.8rem;
+      border-radius: 8px;
     }
     a {
       margin-top: 2rem;
       color: #1e90ff;
-      text-decoration: none;
       font-weight: bold;
+      text-decoration: none;
+      background-color: rgba(0,0,0,0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #1e90ff80;
+      transition: background-color 0.3s ease;
     }
     a:hover {
-      text-decoration: underline;
+      background-color: rgba(0,0,0,0.8);
     }
   </style>
 </head>
 <body>
   <h1>Welcome to Captain's Domain 🫡</h1>
-    <img src="captain.jpg" alt="Captain's Avatar" style="width: 180px; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 0 20px #1e90ff;">
-    
   <p>Ruling the web, one byte at a time.</p>
   <a href="https://github.com/NafiuBasunia" target="_blank" rel="noopener noreferrer">Check out my GitHub</a>
 </body>
