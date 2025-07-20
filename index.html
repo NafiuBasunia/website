@@ -40,7 +40,6 @@
       width: 180px;
       height: 180px;
       object-fit: cover;
-      border-radius: 50%;
       border: 3px solid #f0f0f0;
       margin-bottom: 15px;
     }
@@ -76,6 +75,22 @@
       color: #ffa500;
     }
 
+    .github-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #1e90ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .github-link:hover {
+      background-color: #0072cc;
+    }
+
     @media (max-width: 600px) {
       .container {
         flex-direction: column;
@@ -109,6 +124,9 @@
         <li>Social Engineering Expert</li>
         <li>Exploit Developer</li>
       </ul>
+      <a class="github-link" href="https://github.com/NafiuBasunia" target="_blank" rel="noopener noreferrer">
+        🔗 Check out my GitHub
+      </a>
     </div>
   </div>
 </body>
