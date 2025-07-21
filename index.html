@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Meta SEO -->
-<meta name="description" content="Captain Nafiu Basunia's personal website — Cybersecurity, Hacking, and Technology Portfolio.">
-<meta name="keywords" content="Cybersecurity, Hacking, Kali Linux, Ethical Hacking, Nafiu Basunia, GitHub Pages, Portfolio">
-<meta name="author" content="Nafiu Basunia">
-<meta name="google-site-verification" content="your-verification-code" />
-
-<!-- Open Graph (Facebook, LinkedIn preview) -->
-<meta property="og:title" content="Captain Nafiu Basunia's Domain 🫡">
-<meta property="og:description" content="Explore Nafiu's skills in cybersecurity, ethical hacking, and more.">
-<meta property="og:image" content="https://nafiubasunia.github.io/website/captain.jpg">
-<meta property="og:url" content="https://nafiubasunia.github.io/website">
-<meta property="og:type" content="website">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Captain Nafiu Basunia's Domain 🫡">
-<meta name="twitter:description" content="Explore Nafiu's cybersecurity skills and projects.">
-<meta name="twitter:image" content="https://nafiubasunia.github.io/website/captain.jpg">
-
+  <!-- Meta SEO -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Captain Nafiu Basunia's personal website — Cybersecurity, Hacking, and Technology Portfolio.">
+  <meta name="keywords" content="Cybersecurity, Hacking, Kali Linux, Ethical Hacking, Nafiu Basunia, GitHub Pages, Portfolio">
+  <meta name="author" content="Nafiu Basunia">
+  <meta name="google-site-verification" content="your-verification-code" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Captain Nafiu Basunia's Domain 🫡">
+  <meta property="og:description" content="Explore Nafiu's skills in cybersecurity, ethical hacking, and more.">
+  <meta property="og:image" content="https://nafiubasunia.github.io/website/captain.jpg">
+  <meta property="og:url" content="https://nafiubasunia.github.io/website">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Captain Nafiu Basunia's Domain 🫡">
+  <meta name="twitter:description" content="Explore Nafiu's cybersecurity skills and projects.">
+  <meta name="twitter:image" content="https://nafiubasunia.github.io/website/captain.jpg">
+
   <title>Captain’s First Website</title>
   <style>
     body {
@@ -95,11 +95,11 @@
       background-color: #1565c0;
     }
 
-    /* Matrix Animation */
     #matrix {
+      display: block;
+      background: black;
       width: 100%;
       height: 300px;
-      background: black;
       margin-top: 3rem;
     }
   </style>
@@ -127,22 +127,26 @@
       <a href="https://www.facebook.com/share/15UBu2yAy6/" target="_blank">📘 Facebook</a>
       <a href="https://www.instagram.com/nafiubasunia.333?igsh=MmJldHZoNHRsbXcw" target="_blank">📸 Instagram</a>
     </div>
-
-    <!-- Matrix terminal effect -->
-    <canvas id="matrix"></canvas>
   </div>
+
+  <canvas id="matrix"></canvas>
 
   <script>
     const canvas = document.getElementById("matrix");
     const ctx = canvas.getContext("2d");
 
-    canvas.height = 300;
-    canvas.width = window.innerWidth;
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = 300;
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
 
     const letters = "01";
     const fontSize = 14;
-    const columns = canvas.width / fontSize;
-    const drops = Array(Math.floor(columns)).fill(1);
+    let columns = Math.floor(canvas.width / fontSize);
+    let drops = Array(columns).fill(1);
 
     function drawMatrix() {
       ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
