@@ -1,128 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <!-- 🛡️ Security Headers via Meta -->
-<meta http-equiv="X-Frame-Options" content="DENY" />
-<meta http-equiv="X-Content-Type-Options" content="nosniff" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; object-src 'none';" />
-<!-- Meta SEO -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Captain Nafiu Basunia's personal website — Cybersecurity, Hacking, and Technology Portfolio.">
-  <meta name="keywords" content="Cybersecurity, Hacking, Kali Linux, Ethical Hacking, Nafiu Basunia, GitHub Pages, Portfolio">
-  <meta name="author" content="Nafiu Basunia">
-  <meta name="google-site-verification" content="your-verification-code" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Captain Nafiu Basunia's Domain 🫡">
-  <meta property="og:description" content="Explore Nafiu's skills in cybersecurity, ethical hacking, and more.">
-  <meta property="og:image" content="https://nafiubasunia.github.io/website/captain.jpg">
-  <meta property="og:url" content="https://nafiubasunia.github.io/website">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Captain Nafiu Basunia's Domain 🫡">
-  <meta name="twitter:description" content="Explore Nafiu's cybersecurity skills and projects.">
-  <meta name="twitter:image" content="https://nafiubasunia.github.io/website/captain.jpg">
-
-  <title>Captain’s First Website</title>
-  <style>
-    body {
-      background: #121212;
-      color: #f0f0f0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
-    }
-    .profile-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .profile-img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-    .name {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
-    .skills-box {
-      background-color: #3e2723;
-      padding: 1rem;
-      border-radius: 10px;
-      color: #fff3e0;
-      width: 250px;
-      margin-top: 10px;
-    }
-    .skills-box h2 {
-      margin-bottom: 10px;
-      font-size: 1.3rem;
-    }
-    .skills-box ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .skills-box ul li {
-      font-size: 0.95rem;
-      margin: 5px 0;
-    }
-    .links {
-      margin-top: 25px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .links a {
-      text-decoration: none;
-      color: #ffffff;
-      background-color: #1e88e5;
-      padding: 10px 15px;
-      border-radius: 5px;
-      font-weight: 500;
-      transition: background 0.3s;
-    }
-    .links a:hover {
-      background-color: #1565c0;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ultron — Web Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="profile-section">
-      <img src="captain.jpg" alt="Captain's Avatar" class="profile-img">
-      <div class="name">Nafiu Basunia</div>
-      <div class="skills-box">
-        <h2>Skills</h2>
-        <ul>
-          <li>Networking Specialist</li>
-          <li>Vulnerability Analyst</li>
-          <li>Kali Linux Professional</li>
-          <li>Penetration Tester</li>
-          <li>Social Engineering Expert</li>
-          <li>Exploit Developer</li>
-        </ul>
-      </div>
+  <main>
+    <h1>Ultron</h1>
+    <p class="sub">Your web-based voice assistant — *say something, Captain.*</p>
+
+    <div id="controls">
+      <button id="micBtn" class="mic">🎙️ Start Listening</button>
+      <button id="stopBtn" class="stop" disabled>⏹️ Stop</button>
     </div>
 
-    <div class="links">
-      <a href="https://github.com/NafiuBasunia" target="_blank">🔗 GitHub Profile</a>
-      <a href="https://www.facebook.com/share/15UBu2yAy6/" target="_blank">📘 Facebook</a>
-      <a href="https://www.instagram.com/nafiubasunia.333?igsh=MmJldHZoNHRsbXcw" target="_blank">📸 Instagram</a>
-    </div>
-  </div>
+    <section id="log">
+      <div class="entry system">🧠 Ultron ready.</div>
+    </section>
+
+    <footer>
+      <small>Built for local use. No servers involved.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
